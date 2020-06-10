@@ -39,19 +39,47 @@ class HYHomeMovieItem extends StatelessWidget {
   }
 
   Widget buildContent() {
-    return Text("content");
+    return Row(
+      children: [
+        buildContentImage(),
+        buildContentInfo(),
+        buildContentLine(),
+        buildContentWish()
+      ],
+    );
   }
 
-  Widget buildContemtImage() {
-    return Container();
+//  内容的图片
+  Widget buildContentImage() {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: Image.network(
+        movie.imageURL,
+        height: 150,
+      ),
+    );
   }
 
   Widget buildContentInfo() {
-    return Container();
+    return Column(
+      children: [
+        buildContentInfoTitle(),
+        buildContentInfoRate(),
+        buildContentInfoDesc()
+      ],
+    );
   }
 
   Widget buildContentInfoTitle() {
-    return Container();
+    return Text.rich(
+      TextSpan(
+        children: [
+          WidgetSpan(),
+          WidgetSpan(),
+          WidgetSpan()
+        ]
+      )
+    );
   }
 
   Widget buildContentInfoRate() {
