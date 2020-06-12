@@ -12,7 +12,7 @@ class AppTheme {
   static final ThemeData norTheme = ThemeData(
       primarySwatch: Colors.pink,
       accentColor: Colors.amber,
-      canvasColor: Colors.red,
+      canvasColor: Color.fromRGBO(255, 254, 222, 1),
       textTheme: TextTheme(
           bodyText2: TextStyle(fontSize: bodyFontSize),
           headline4: TextStyle(fontSize: smallFontSize, color: Colors.black87),
