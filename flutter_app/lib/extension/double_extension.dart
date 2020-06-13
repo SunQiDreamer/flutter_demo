@@ -1,4 +1,4 @@
-import '../utils//size_fit.dart';
+import '../utils/size_fit.dart';
 
 extension DoubleFit on double {
   double get px {

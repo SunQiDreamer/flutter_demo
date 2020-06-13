@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/food/core/model/category_model.dart';
 import 'package:flutterapp/food/core/model/meal_model.dart';
 import 'package:flutterapp/food/core/viewmodel/meal_view_model.dart';
+import 'package:flutterapp/food/ui/page/meal/meal.dart';
+import 'package:flutterapp/food/ui/widgets/meal_item.dart';
 import 'package:provider/provider.dart';
 import 'package:collection/collection.dart';
 
@@ -20,11 +22,8 @@ class MealContent extends StatelessWidget {
       builder: (ctx, meals, child) {
         return ListView.builder(
           itemBuilder: (ctx, index) {
-            return Container(
-              width: 100,
-              height: 50,
-              child: Text("1111"),
-            );
+            final mealModel = meals[index];
+            return MealItem(meals[index]);
           },
           itemCount: meals.length,
         );
