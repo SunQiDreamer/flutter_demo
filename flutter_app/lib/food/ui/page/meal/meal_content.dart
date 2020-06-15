@@ -23,7 +23,7 @@ class MealContent extends StatelessWidget {
         return ListView.builder(
           itemBuilder: (ctx, index) {
             final mealModel = meals[index];
-            return MealItem(meals[index]);
+            return MealItem(mealModel);
           },
           itemCount: meals.length,
         );

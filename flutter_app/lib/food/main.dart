@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutterapp/food/core/router/router.dart';
+import 'package:flutterapp/food/core/viewmodel/favor_view_model.dart';
 import 'package:flutterapp/food/core/viewmodel/filter_view_model.dart';
 import 'package:flutterapp/food/core/viewmodel/meal_view_model.dart';
 import 'package:flutterapp/food/ui/share/app_theme.dart';
@@ -17,6 +18,13 @@ void main() {
           return mealVM;
         },
       ),
+      ChangeNotifierProxyProvider<FilterViewModel, FavorViewModel>(
+        create: (ctx) => FavorViewModel(),
+        update: (ctx, filterVM, favorVM) {
+          favorVM.updateFilters(filterVM);
+          return favorVM;
+        },
+      )
     ],
     child: MyApp(),
   ));
