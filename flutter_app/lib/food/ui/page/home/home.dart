@@ -3,8 +3,6 @@ import 'home_app_bar.dart';
 import 'home_content.dart';
 
 class HomeScreen extends StatelessWidget {
-  int _currentIndex = 0;
-
   @override
   Widget build(BuildContext   context) {
     return Scaffold(

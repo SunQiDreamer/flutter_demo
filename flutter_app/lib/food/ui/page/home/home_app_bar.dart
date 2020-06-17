@@ -6,7 +6,7 @@ class HomeAppBar extends AppBar {
     leading: IconButton(
       icon: Icon(Icons.build),
       onPressed: () {
-
+        Scaffold.of(context).openDrawer();
       },
     ),
   );
