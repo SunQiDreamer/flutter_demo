@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutterapp/food/core/model/meal_model.dart';
 import 'package:flutterapp/food/core/viewmodel/filter_view_model.dart';
-import 'package:flutterapp/food/ui/page/meal/meal.dart';
 
 class BaseMealViewModel extends ChangeNotifier{
   List<MealModel> _meals = [];

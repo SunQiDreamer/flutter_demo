@@ -12,18 +12,18 @@ class Router {
     MealScreen.routeName: (ctx) => MealScreen(),
     DetailScreen.routeName: (ctx) => DetailScreen()
   };
-
   static final RouteFactory generateRoute = (settings) {
     if (settings.name == FilterScreen.routeName) {
       return MaterialPageRoute(
-        builder: (ctx) {
-          return FilterScreen();
-        },
-        fullscreenDialog: true
+          builder: (ctx) {
+            return FilterScreen();
+          },
+          fullscreenDialog: true
       );
     }
     return null;
   };
+
 
   static final RouteFactory unknowRouter = (settings) {
     return null;

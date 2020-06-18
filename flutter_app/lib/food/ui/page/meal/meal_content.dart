@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/food/core/model/category_model.dart';
 import 'package:flutterapp/food/core/model/meal_model.dart';
 import 'package:flutterapp/food/core/viewmodel/meal_view_model.dart';
-import 'package:flutterapp/food/ui/page/meal/meal.dart';
 import 'package:flutterapp/food/ui/widgets/meal_item.dart';
 import 'package:provider/provider.dart';
 import 'package:collection/collection.dart';

@@ -65,11 +65,11 @@ class MealItem extends StatelessWidget {
 
   Widget buildOperationInfo() {
       return Padding(
-        padding: EdgeInsets.all(5.px),
+        padding: EdgeInsets.all(10.px),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            OperationItem(Icon(Icons.schedule), "${_mealModel.duration}"),
+            OperationItem(Icon(Icons.schedule), "${_mealModel.duration}分钟"),
             OperationItem(Icon(Icons.restaurant), _mealModel.complexStr),
             buildFavorItem()
           ],

@@ -16,7 +16,7 @@ class HomeContent extends StatelessWidget {
 
         final categories = snapshot.data;
         return GridView.builder(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(20.px),
             itemCount: categories.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
